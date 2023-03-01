@@ -1,0 +1,21 @@
+<form action="{{ url_for("chatai")}}" method="post">
+<input type="text" id="question" name="question" placeholder="Ask me a question:">
+<div class="card">
+    <div class="card-body">
+        <label class="badge badge-gradient-danger">Your question is:</label>
+        <p class="mb-0 font-weight-light">{{ question }}</p>
+    </div>
+</div>
+<hr /> 
+<div class="card">
+    <div class="card-body">
+        <div class="d-flex mt-5 align-items-top">
+            <img src="{{ url_for('static', filename='images/smartai.png')}}" class="img-sm rounded-circle mr-3" alt="image">
+            <div class="mb-0 flex-grow">
+                <h5 class="mr-2 mb-2">A Smart AI</h5>
+            </div>
+        </div>
+        <label class="badge badge-gradient-success">The truth is:</label>
+        <p class="mb-0 font-weight-light">{{ answer }}</p>
+    </div>      
+</div>

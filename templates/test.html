@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% include '/library/normal_head.html' %}
+  </head>
+  <body>
+    {% include '/library/normal_navbar.html' %}
+    <div class="container-fluid page-body-wrapper">
+        {% include '/library/normal_sidebar.html' %}
+        <div class="main-panel">
+            <div class="content-wrapper">
+                {% include '/library/normal_pageheader.html' %}
+                <h1>Successed</h1>
+                <!-- content-wrapper ends -->
+            </div>
+            <footer class="footer">
+                <div class="container-fluid d-flex justify-content-between">
+                    <span class="text-muted d-block text-center text-sm-start d-sm-inline-block">Copyright © 2021 All rights reserved.</span>
+                </div>
+                <!-- partial:../../partials/_footer.html -->
+            </footer>
+          <!-- main-panel ends -->
+        </div>
+        <!-- page-body-wrapper ends -->
+    </div>
+    <!-- container-scroller -->
+    <!-- plugins:js -->
+    <script src="{{url_for('static', filename='vendors/js/vendor.bundle.base.js')}}"></script>
+    <!-- endinject -->
+    <!-- Plugin js for this page -->
+    <!-- End plugin js for this page -->
+    <!-- inject:js -->
+    <script src="{{url_for('static', filename='js/off-canvas.js')}}"></script>
+    <script src="{{url_for('static', filename='js/hoverable-collapse.js')}}"></script>
+    <script src="{{url_for('static', filename='js/misc.js')}}"></script>
+    <!-- endinject -->
+    <!-- Custom js for this page -->
+    <!-- End custom js for this page -->
+  </body>
+</html>
