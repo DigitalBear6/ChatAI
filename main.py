@@ -9,11 +9,6 @@ bootstrap = Bootstrap5(app)
 app.config['ENV'] = 'development'
 app.config['DEBUG'] = True
 
-'''
-def ai_get(q):
-    return "answer of (" + q + ")"
-'''
-
 @app.route("/home")
 def home():
     return str(hello_name("Frank") + ". How dare you!")
@@ -23,7 +18,6 @@ def home():
 def hello():
     ID = "Hui Junxiong"
     Date = 1
-    xxx.t()
     return render_template('hello.html',
                            ID=ID,
                            Date=Date)
